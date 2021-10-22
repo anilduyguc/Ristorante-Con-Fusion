@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <style>
+    </style>
 </head>
 
 <body>
@@ -37,13 +39,19 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-6">
+                <div class="col-lg-6  col-lg-6 col-sm-10">
                     <h1>Ristorante Con Fusion</h1>
                     <p>We take inspiration from the world's best cusiness and create a unique fusion experience. Our
                         lipsmacking creations will tickle your culinary senses!</p>
-                </div class="col-12 col-sm">
-                <div class="col col-sm align-self-center">
+                </div>
+                <div class="col-lg-3 col-sm-10 align-self-center">
                     <img src="img/logo.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-sm-10 align-self-center">
+                    <div class="offset-md-2 col-md-10 d-grid">
+                        <button class="btn btn-warning btn-sm" type="button"
+                            onClick="document.getElementById('form-reserve').scrollIntoView();">Reserve Table</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -72,7 +80,8 @@
                 <div class="d-flex">
                     <img src="img/uthappizza.png" class="d-flex align-self-center me-3 img-thumbnail" />
                     <div>
-                        <h2 class="mt-0">Uthappizza <span class="badge bg-danger">HOT</span><span class="badge rounded-pill bg-secondary ms-2">$4.99</span></h2>
+                        <h2 class="mt-0">Uthappizza <span class="badge bg-danger">HOT</span><span
+                                class="badge rounded-pill bg-secondary ms-2">$4.99</span></h2>
                         <p class="d-none d-sm-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor
                             enim earum harum in repudiandae
                             incidunt nisi molestiae debitis impedit. Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -86,54 +95,141 @@
 
             </div>
         </div>
-    </div>
 
-    <div class="row row-content align-items-center">
-        <div class="col-12 col-sm-4 col-md-3">
-            <h3>This Month's Promotions</h3>
-        </div>
-        <div class="col col-sm col-md">
-            <h2>Joey Tribbiani</h2>
-            <p class="d-none d-sm-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor enim earum harum in repudiandae
-                incidunt nisi molestiae debitis impedit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Consequatur, aliquid cum officiis eius sunt delectus consequuntur. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Eius maxime omnis aliquid sapiente possimus temporibus magnam,
-                repudiandae nulla consequuntur. Doloremque!</p>
-        </div>
-    </div>
-
-    <div class="row row-content align-items-center">
-        <div class="col-12 col-sm-4 order-sm-last col-md-3">
-            <h3>Meet Our Culinary Specialists</h3>
-        </div>
-        <div class="col col-sm order-sm-first col-md">
-            <!-- <div class="media">
-                <img src="img/alberto.png" alt="alberto" class="d-flex align-self-center img-thumbnail">
-                <div class="media-body">
-                    <h2 class="mt-0">Monica Geller</h2>
-                    <h4>Head Cheff</h4>
-                    <p class="d-none d-sm-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor enim earum harum in repudiandae
-                        incidunt nisi molestiae debitis impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aperiam excepturi itaque sint alias obcaecati qui nostrum. Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Quo consequatur animi nisi pariatur dolor excepturi possimus cupiditate rerum est!
-                        Autem.</p>
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 col-md-3">
+                <h3 class="ms-5">This Month's Promotions</h3>
+            </div>
+            <div class="col col-sm col-md ms-2">
+                <div class="d-flex ms-0">
+                    <div>
+                        <h2 class="mt-0">Weekend Grand Buffet<span class="badge bg-danger ms-2">NEW</span></h2>
+                        <p class="d-none d-sm-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor
+                            enim
+                            earum harum in repudiandae
+                            incidunt nisi molestiae debitis impedit. Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Consequatur, aliquid cum officiis eius sunt delectus consequuntur. Lorem ipsum dolor sit
+                            amet
+                            consectetur adipisicing elit. Eius maxime omnis aliquid sapiente possimus temporibus magnam,
+                            repudiandae nulla consequuntur. Doloremque!</p>
+                    </div>
+                    <img src="img/buffet.png" class="d-flex align-self-center me-5 img-thumbnail">
                 </div>
-            </div> -->
-            <div class="d-flex">
-                <img src="img/alberto.png" class="d-flex align-self-center me-3 img-thumbnail" />
-                <div>
-                    <h2 class="mt-0">Alberto Somayya</h2>
-                    <h4>Head Cheff</h4>
-                    <p class="d-none d-sm-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor enim earum harum in repudiandae
-                        incidunt nisi molestiae debitis impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aperiam excepturi itaque sint alias obcaecati qui nostrum. Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Quo consequatur animi nisi pariatur dolor excepturi possimus cupiditate rerum est!
-                        Autem.</p>
+
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                <h3>Meet Our Culinary Specialists</h3>
+            </div>
+            <div class="col col-sm order-sm-first col-md">
+                <!-- <div class="media">
+                    <img src="img/alberto.png" alt="alberto" class="d-flex align-self-center img-thumbnail">
+                    <div class="media-body">
+                        <h2 class="mt-0">Monica Geller</h2>
+                        <h4>Head Cheff</h4>
+                        <p class="d-none d-sm-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor enim earum harum in repudiandae
+                            incidunt nisi molestiae debitis impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Aperiam excepturi itaque sint alias obcaecati qui nostrum. Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Quo consequatur animi nisi pariatur dolor excepturi possimus cupiditate rerum est!
+                            Autem.</p>
+                    </div>
+                </div> -->
+                <div class="d-flex">
+                    <img src="img/alberto.png" class="d-flex align-self-center me-3 img-thumbnail" />
+                    <div>
+                        <h2 class="mt-0">Alberto Somayya</h2>
+                        <h4>Head Cheff</h4>
+                        <p class="d-none d-sm-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor
+                            enim
+                            earum harum in repudiandae
+                            incidunt nisi molestiae debitis impedit. Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Aperiam excepturi itaque sint alias obcaecati qui nostrum. Lorem, ipsum dolor sit amet
+                            consectetur
+                            adipisicing elit. Quo consequatur animi nisi pariatur dolor excepturi possimus cupiditate
+                            rerum
+                            est!
+                            Autem.</p>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="row row-content align-items-center" id="form-reserve">
+            <div class="col-lg-2 col-sm-0">
+
+            </div>
+            <div class="col-lg-8 col-sm-12">
+
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white">Reserve Table</h3>
+                    <div class="card-body">
+                        <dl class="row">
+                            <div class="col-lg-2 col-sm-10">Number of Guests</div>
+                            <div class="col-lg-10 col-sm-10">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">3</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option4">
+                                    <label class="form-check-label" for="inlineRadio3">4</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option5">
+                                    <label class="form-check-label" for="inlineRadio3">5</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option6">
+                                    <label class="form-check-label" for="inlineRadio3">6</label>
+                                  </div>
+                            </div>
+                        </dl>
+                        <dl class="row">
+                            <form action="">
+                                <div class="form-group row mt-3">
+                                    <label for="telnum" class="col-lg-12 col-md-2 col-sm-3 col-xs-3 col-form-label">Date and Time</label>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                        <input type="text" name="date" id="date" class="form-control" placeholder="Date"> 
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                        <input type="text" name="time" id="time" class="form-control" placeholder="Time"> 
+                                    </div>
+                                </div>
+                            </form>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-0">
+
+            </div>
+
+
+        </div>
     </div>
-    </div>
+
+
+
+
+
+
+
+
+
+
+
 
     <footer class="footer">
         <div class="container">
