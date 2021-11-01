@@ -9,6 +9,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Ristorante Con Fusion</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <style>
@@ -47,32 +48,35 @@
                 <div class="modal-header">
                     <h4 class="modal-title">Login</h4>
                     <button type="button" class="btn-close" data-bs-dismiss="modal">
-                        
+
                     </button>
                 </div>
                 <div class="modal-body">
                     <form>
-                         <div class="form-row row">
-                             <div class="col-lg-4 col-sm-4">
-                                <input type="email" placeholder="Enter Email" class="form-control form-control-sm me-1" id="inputEmail1">
-                             </div>
+                        <div class="form-row row">
                             <div class="col-lg-4 col-sm-4">
-                                <input type="password" placeholder="Password" class="form-control form-control-sm me-1" id="inputPassword1">
+                                <input type="email" placeholder="Enter Email" class="form-control form-control-sm me-1"
+                                    id="inputEmail1">
+                            </div>
+                            <div class="col-lg-4 col-sm-4">
+                                <input type="password" placeholder="Password" class="form-control form-control-sm me-1"
+                                    id="inputPassword1">
                             </div>
                             <div class="col-lg-auto col-sm-auto">
                                 <input type="checkbox" class="form-check-input">
                                 <label class="form-check-label">Remember Me</label>
                             </div>
-                        </div> 
+                        </div>
                         <div class="form-row row mt-2">
                             <div class="col-sm-9 col-lg-9"></div>
                             <div class="col-sm-1 col-lg-1">
-                                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-secondary btn-sm"
+                                    data-bs-dismiss="modal">Cancel</button>
                             </div>
                             <div class="col-sm-2 col-lg-2">
                                 <button type="button" class="btn btn-primary btn-sm ml-1">Sign In</button>
-                            </div>  
-                        </div> 
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -93,8 +97,8 @@
                     <div class="offset-md-2 col-md-10 d-grid">
                         <!-- <button class="btn btn-warning btn-sm" type="button"
                             onClick="document.getElementById('form-reserve').scrollIntoView();">Reserve Table</button> -->
-                        <a role="button" class="btn btn-block nav-link btn-warning text-dark"
-                            data-bs-toggle="modal" data-bs-html="true" data-bs-target="#reserveTable">Reserve Table</a>
+                        <a role="button" class="btn btn-block nav-link btn-warning text-dark" data-bs-toggle="modal"
+                            data-bs-html="true" data-bs-target="#reserveTable">Reserve Table</a>
                     </div>
                 </div>
             </div>
@@ -107,7 +111,7 @@
                     <div class="modal-header">
                         <h4 class="modal-title">Reserve a Table</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal">
-                            
+
                         </button>
                     </div>
                     <div class="modal-body">
@@ -175,11 +179,11 @@
                         <div class="row mt-2">
                             <div class="col-2"></div>
                             <div class="col-7">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Cancel</button>
-                                <button type="button" class="btn btn-primary" >Reserve</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary">Reserve</button>
                             </div>
-                            <div class="col-1"></div> 
-                        </div> 
+                            <div class="col-1"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -249,29 +253,36 @@
                             <img src="img/uthappizza.png" alt="uthappizza" class="d-block img-fluid">
                             <div class="carousel-caption d-none d-md-block">
                                 <h2>Uthappizza <span class="badge bg-danger">HOT</span><span
-                                    class="badge rounded-pill bg-secondary ms-2">$4.99</span></h2>
-                                <p class="d-none d-sm-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor
-                                enim earum harum in repudiandae
-                                incidunt nisi molestiae debitis impedit. Lorem, ipsum dolor sit amet consectetur adipisicing
-                                elit.Quod error quasi explicabo asperiores in quas vitae. Lorem ipsum dolor sit amet
-                                consectetur
-                                adipisicing elit. Iste provident expedita dicta dolor qui, ipsum quo maxime repudiandae
-                                cupiditate
-                                nobis.</p>
+                                        class="badge rounded-pill bg-secondary ms-2">$4.99</span></h2>
+                                <p class="d-none d-sm-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Ut dolor
+                                    enim earum harum in repudiandae
+                                    incidunt nisi molestiae debitis impedit. Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing
+                                    elit.Quod error quasi explicabo asperiores in quas vitae. Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing elit. Iste provident expedita dicta dolor qui, ipsum quo maxime
+                                    repudiandae
+                                    cupiditate
+                                    nobis.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="img/buffet.png" alt="buffet" class="d-block img-fluid">
                             <div class="carousel-caption d-none d-md-block">
                                 <h2>Weekend Grand Buffet<span class="badge bg-danger ms-2">NEW</span></h2>
-                                <p class="d-none d-sm-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor
+                                <p class="d-none d-sm-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Ut dolor
                                     enim
                                     earum harum in repudiandae
-                                    incidunt nisi molestiae debitis impedit. Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    incidunt nisi molestiae debitis impedit. Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing
                                     elit.
-                                    Consequatur, aliquid cum officiis eius sunt delectus consequuntur. Lorem ipsum dolor sit
+                                    Consequatur, aliquid cum officiis eius sunt delectus consequuntur. Lorem ipsum dolor
+                                    sit
                                     amet
-                                    consectetur adipisicing elit. Eius maxime omnis aliquid sapiente possimus temporibus magnam,
+                                    consectetur adipisicing elit. Eius maxime omnis aliquid sapiente possimus temporibus
+                                    magnam,
                                     repudiandae nulla consequuntur. Doloremque!</p>
                             </div>
                         </div>
@@ -280,34 +291,46 @@
                             <div class="carousel-caption d-none d-md-block">
                                 <h2>Alberto Somayya</h2>
                                 <h4>Head Cheff</h4>
-                                <p class="d-none d-sm-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor
+                                <p class="d-none d-sm-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Ut dolor
                                     enim
                                     earum harum in repudiandae
-                                    incidunt nisi molestiae debitis impedit. Lorem ipsum dolor sit amet consectetur adipisicing
+                                    incidunt nisi molestiae debitis impedit. Lorem ipsum dolor sit amet consectetur
+                                    adipisicing
                                     elit.
-                                    Aperiam excepturi itaque sint alias obcaecati qui nostrum. Lorem, ipsum dolor sit amet
+                                    Aperiam excepturi itaque sint alias obcaecati qui nostrum. Lorem, ipsum dolor sit
+                                    amet
                                     consectetur
-                                    adipisicing elit. Quo consequatur animi nisi pariatur dolor excepturi possimus cupiditate
+                                    adipisicing elit. Quo consequatur animi nisi pariatur dolor excepturi possimus
+                                    cupiditate
                                     rerum
                                     est!
                                     Autem.</p>
                             </div>
                         </div>
                     </div>
+
                     <ol class="carousel-indicators">
                         <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
                         <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
                         <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
                     </ol>
-                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
+                        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    
+                    <button type="button" class="btn btn-danger btn-sm" id="carouselButton">
+                        <span class="fa fa-pause" id="carousel-button-icon"></span>
+                    </button>
                 </div>
+
             </div>
+
         </div>
+
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
@@ -485,6 +508,25 @@
         //  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         //      return new bootstrap.Tooltip(tooltipTriggerEl)
         //  });
+
+        $(document).ready(function () {
+            $('#myCarousel').carousel({
+                interval: 2000
+            });
+            $('#carouselButton').on('click', function () {
+
+                if ($('#carouselButton').children('span').hasClass('fa-pause')) {
+                    $('#myCarousel').carousel("pause");
+                    $('#carouselButton').children('span').removeClass('fa-pause');
+                    $('#carouselButton').children('span').addClass('fa-play');
+                }
+                else if ($('#carouselButton').children('span').hasClass('fa-play')) {
+                    $('#myCarousel').carousel("cycle");
+                    $('#carouselButton').children('span').removeClass('fa-play');
+                    $('#carouselButton').children('span').addClass('fa-pause');
+                }
+            });
+        });
     </script>
 </body>
 
