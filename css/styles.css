@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .row-header {
   margin: 0px auto;
   padding: 0px 0px; }
@@ -19,6 +18,13 @@
   padding: 70px 30px;
   background: #9575cd;
   color: floralwhite; }
+
+.modal-header {
+  background: #512da8;
+  color: floralwhite; }
+
+.modal-body {
+  background: #D1C4E9; }
 
 address {
   font-size: 80%;
